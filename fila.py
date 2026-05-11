@@ -1,4 +1,4 @@
-from Nodofila import NodoFila
+from nodo_fila import NodoFila
 
 class Fila:
     def __init__(self):
@@ -10,6 +10,7 @@ class Fila:
         return self.inicio is None
 
     def enqueue(self, musica):
+        # O nome da classe deve ser NodoFila (com N e F maiúsculos)
         novo_nodo = NodoFila(musica)
 
         # Se a fila estiver vazia
@@ -25,7 +26,6 @@ class Fila:
         self.tamanho += 1
 
     def dequeue(self):
-
         # Fila vazia
         if self.esta_vazia():
             return None
@@ -43,7 +43,6 @@ class Fila:
         return musica_removida
 
     def exibir_fila(self):
-
         if self.esta_vazia():
             print("Fila vazia.")
             return
@@ -51,5 +50,6 @@ class Fila:
         atual = self.inicio
 
         while atual is not None:
+            # O método exibir_dados() pertence à classe Musica
             atual.musica.exibir_dados()
             atual = atual.proximo
