@@ -13,7 +13,3 @@ class Musica:
         print(f"Gênero: {self.genero}")
         print(f"BPM: {self.bpm}")
         print("-" * 30)
-
-        #exemplo de uso
-musica1 = Musica(1, "Silver Linings", "Piphoka", "Lo-fi", 92)
-musica1.exibir_dados()
