@@ -1,13 +1,13 @@
 from musica import Musica
 from nodo_lista import NodoLista
 
-
 class Biblioteca:
     def __init__(self):
         self.inicio = None
         self.proximo_id = 1
 
     def adicionar_musica(self, titulo, artista, genero, bpm):
+        # O nome da classe deve ser Musica (com M maiúsculo)
         nova_musica = Musica(
             self.proximo_id,
             titulo,
@@ -16,6 +16,7 @@ class Biblioteca:
             bpm
         )
 
+        # O nome da classe deve ser NodoLista (com N e L maiúsculos)
         novo_nodo = NodoLista(nova_musica)
 
         # Lista vazia
@@ -44,14 +45,11 @@ class Biblioteca:
         anterior = None
 
         while atual is not None:
-
             # Música encontrada
             if atual.musica.id == id:
-
                 # Remover primeiro nó
                 if anterior is None:
                     self.inicio = atual.proximo
-
                 # Remover nó do meio/final
                 else:
                     anterior.proximo = atual.proximo
@@ -66,13 +64,10 @@ class Biblioteca:
 
     def buscar_por_id(self, id):
         atual = self.inicio
-
         while atual is not None:
-
             if atual.musica.id == id:
                 atual.musica.exibir_dados()
                 return atual.musica
-
             atual = atual.proximo
 
         print("Música não encontrada.")
@@ -80,13 +75,10 @@ class Biblioteca:
 
     def buscar_por_titulo(self, titulo):
         atual = self.inicio
-
         while atual is not None:
-
             if atual.musica.titulo.lower() == titulo.lower():
                 atual.musica.exibir_dados()
                 return atual.musica
-
             atual = atual.proximo
 
         print("Música não encontrada.")
@@ -98,7 +90,6 @@ class Biblioteca:
             return
 
         atual = self.inicio
-
         while atual is not None:
             atual.musica.exibir_dados()
             atual = atual.proximo
