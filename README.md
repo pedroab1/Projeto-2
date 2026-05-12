@@ -1,7 +1,6 @@
 # Sistema de Gerenciamento de Playlist - Projeto 2
 
 Este projeto consiste no desenvolvimento do backend de um sistema de gerenciamento de músicas, focado na implementação manual de estruturas de dados fundamentais. O software permite organizar uma biblioteca pessoal, categorizar faixas por "humor" (BPM) e manter um histórico de reprodução.
-
 ## Objetivo
 O objetivo principal é gerenciar uma biblioteca musical utilizando estritamente **Listas Encadeadas** e **Filas FIFO** implementadas do zero, sem o auxílio de coleções nativas do Python (como `list`, `deque` ou `dict`).
 
