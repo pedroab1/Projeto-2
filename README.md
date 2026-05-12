@@ -2,10 +2,10 @@
 
 Este projeto consiste no desenvolvimento do backend de um sistema de gerenciamento de músicas, focado na implementação manual de estruturas de dados fundamentais. O software permite organizar uma biblioteca pessoal, categorizar faixas por "humor" (BPM) e manter um histórico de reprodução.
 
-## 🎯 Objetivo
+## Objetivo
 O objetivo principal é gerenciar uma biblioteca musical utilizando estritamente **Listas Encadeadas** e **Filas FIFO** implementadas do zero, sem o auxílio de coleções nativas do Python (como `list`, `deque` ou `dict`).
 
-## 🛠️ Requisitos Técnicos
+## Requisitos Técnicos
 Para cumprir os requisitos técnicos da disciplina, foram implementadas as seguintes classes:
 * **Musica**: Representa uma faixa contendo `id`, `titulo`, `artista`, `genero` e `bpm`.
 * **NodoLista / NodoFila**: Estruturas de nós para apontamento em memória.
@@ -13,7 +13,7 @@ Para cumprir os requisitos técnicos da disciplina, foram implementadas as segui
 * **Fila (FIFO)**: Implementação própria com `enqueue` e `dequeue` para as filas de humor e o histórico.
 * **ID Sequencial**: Gerado automaticamente e não reutilizado após a remoção de uma faixa.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 O sistema oferece um menu interativo com as seguintes opções:
 1.  **Adicionar música**: Insere no final da lista, solicitando título, artista, gênero e BPM com validação.
 2.  **Remover música**: Busca pelo ID e remove o nó correspondente da lista encadeada.
@@ -25,7 +25,7 @@ O sistema oferece um menu interativo com as seguintes opções:
 8.  **Exibir histórico**: Lista todas as músicas já reproduzidas em ordem cronológica.
 9.  **Estatísticas**: Exibe o total na biblioteca, o tamanho de cada fila de humor e o total de músicas reproduzidas.
 
-## 🎼 Classificação por Humor (BPM)
+## Classificação por Humor (BPM)
 A organização das filas segue os critérios técnicos definidos para o projeto:
 
 | Fila | Humor | Faixa de BPM |
@@ -35,7 +35,7 @@ A organização das filas segue os critérios técnicos definidos para o projeto
 | **Animar** | Agitado | 121 a 160 BPM |
 | **Treinar** | Intenso | Acima de 160 BPM |
 
-## 💻 Como Executar
+## Como Executar
 1. Certifique-se de ter o Python 3 instalado.
 2. Certifique-se de que todos os arquivos `.py` estão no mesmo diretório.
 3. Execute o comando:
