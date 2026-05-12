@@ -1,18 +1,15 @@
-from biblioteca import Biblioteca
+from Biblioteca import Biblioteca
 from fila import Fila
 
 class SistemaPlaylist:
     def __init__(self):
-        # Biblioteca principal
         self.biblioteca = Biblioteca()
 
-        # Filas de humor
         self.fila_relaxar = Fila()
         self.fila_focar = Fila()
         self.fila_animar = Fila()
         self.fila_treinar = Fila()
 
-        # Histórico de reproduções
         self.historico = Fila()
 
     def limpar_fila(self, fila):
@@ -20,7 +17,6 @@ class SistemaPlaylist:
             fila.dequeue()
 
     def montar_filas_humor(self):
-        # Limpa filas antigas para remontar do zero [cite: 46]
         self.limpar_fila(self.fila_relaxar)
         self.limpar_fila(self.fila_focar)
         self.limpar_fila(self.fila_animar)
@@ -32,7 +28,6 @@ class SistemaPlaylist:
             musica = atual.musica
             bpm = musica.bpm
 
-            # Classificação por BPM conforme o requisito [cite: 29]
             if bpm <= 80:
                 self.fila_relaxar.enqueue(musica)
             elif bpm <= 120:
@@ -64,9 +59,9 @@ class SistemaPlaylist:
             return
 
         print("Reproduzindo agora:")
-        musica.exibir_dados() # Chama o método da classe Musica
+        musica.exibir_dados()
 
-        # Enfileira no histórico após reproduzir [cite: 32]
+        
         self.historico.enqueue(musica)
 
     def exibir_fila_humor(self, humor):
@@ -86,7 +81,6 @@ class SistemaPlaylist:
         self.historico.exibir_fila()
 
     def estatisticas(self):
-        # Contar músicas da biblioteca percorrendo a lista encadeada [cite: 39]
         total_biblioteca = 0
         atual = self.biblioteca.inicio
 
@@ -103,7 +97,6 @@ class SistemaPlaylist:
         print(f"Músicas reproduzidas: {self.historico.tamanho}")
 
 
-# Instância global do sistema
 sistema = SistemaPlaylist()
 
 while True:
