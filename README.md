@@ -41,6 +41,13 @@ O sistema oferece um menu interativo com as seguintes opções:
 | **Animar** | Agitado | 121 a 160 BPM |
 | **Treinar** | Intenso | Acima de 160 BPM |
 
+## 💻 Como Executar
+1. Certifique-se de ter o Python 3 instalado.
+2. Certifique-se de que todos os arquivos `.py` estão no mesmo diretório.
+3. Execute o comando:
+   ```bash
+   python Sistemaplaylist.py
+
 
 # Sistema de Playlist - Estrutura de Dados
 Este projeto consiste no desenvolvimento do backend de um sistema de gerenciamento de músicas, focado na implementação manual de estruturas de dados fundamentais. O projeto foi desenvolvido para a disciplina de **Estrutura de Dados** na **Fatec Rio Claro**.
