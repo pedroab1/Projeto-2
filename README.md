@@ -31,6 +31,15 @@ O sistema oferece um menu interativo com as seguintes opções:
 
 
 
+## 🎼 Classificação por Humor (BPM)
+[cite_start]A organização das filas segue os critérios técnicos definidos para o projeto[cite: 29]:
+
+| Fila | Humor | Faixa de BPM |
+| :--- | :--- | :--- |
+| **Relaxar** | Tranquilo | Até 80 BPM |
+| **Focar** | Concentração | 81 a 120 BPM |
+| **Animar** | Agitado | 121 a 160 BPM |
+| **Treinar** | Intenso | Acima de 160 BPM |
 
 
 # Sistema de Playlist - Estrutura de Dados
