@@ -7,6 +7,13 @@
 [cite_start]O objetivo principal é gerenciar uma biblioteca musical utilizando estritamente **Listas Encadeadas** e **Filas FIFO** implementadas do zero, sem o auxílio de coleções nativas do Python (como `list`, `deque` ou `dict`)[cite: 43].
 
 
+## 🛠️ Requisitos Técnicos
+Para cumprir os requisitos técnicos da disciplina, foram implementadas as seguintes classes:
+* [cite_start]**Musica**: Representa uma faixa contendo `id`, `titulo`, `artista`, `genero` e `bpm`[cite: 8].
+* [cite_start]**NodoLista / NodoFila**: Estruturas de nós para apontamento em memória[cite: 9, 11].
+* [cite_start]**Biblioteca (Lista Encadeada)**: Armazena todas as músicas cadastradas e permite inserção, remoção e busca[cite: 10].
+* [cite_start]**Fila (FIFO)**: Implementação própria com `enqueue` e `dequeue` para as filas de humor e o histórico[cite: 13, 14, 44].
+* [cite_start]**ID Sequencial**: Gerado automaticamente e não reutilizado após a remoção de uma faixa[cite: 18, 47].
 
 
 
