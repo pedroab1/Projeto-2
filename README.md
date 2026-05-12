@@ -17,6 +17,18 @@ Para cumprir os requisitos técnicos da disciplina, foram implementadas as segui
 
 
 
+## 🚀 Funcionalidades
+O sistema oferece um menu interativo com as seguintes opções:
+1.  [cite_start]**Adicionar música**: Insere no final da lista, solicitando título, artista, gênero e BPM com validação[cite: 16, 17, 18, 48].
+2.  [cite_start]**Remover música**: Busca pelo ID e remove o nó correspondente da lista encadeada[cite: 19, 20].
+3.  [cite_start]**Buscar música**: Permite a pesquisa por ID ou por Título, exibindo os dados da faixa encontrada[cite: 22].
+4.  [cite_start]**Listar biblioteca**: Percorre a lista encadeada do início ao fim para exibir todas as músicas[cite: 23, 25].
+5.  **Montar filas por humor**: Classifica automaticamente as músicas baseadas no BPM. [cite_start]Esta operação limpa as filas anteriores antes de remontá-las[cite: 27, 45, 46].
+6.  [cite_start]**Reproduzir próxima**: Retira a música do topo da fila de humor escolhida, exibe seus dados e a enfileira no histórico[cite: 31, 32].
+7.  [cite_start]**Exibir fila de humor**: Mostra todas as músicas em espera em uma categoria sem removê-las[cite: 33, 34].
+8.  [cite_start]**Exibir histórico**: Lista todas as músicas já reproduzidas em ordem cronológica[cite: 36, 38].
+9.  [cite_start]**Estatísticas**: Exibe o total na biblioteca, o tamanho de cada fila de humor e o total de músicas reproduzidas[cite: 39, 40].
+
 
 
 
