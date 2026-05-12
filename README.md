@@ -1,5 +1,7 @@
 # Sistema de Playlist - Estrutura de Dados
 
+
+
 Este projeto consiste no desenvolvimento do backend de um sistema de gerenciamento de músicas, focado na implementação manual de estruturas de dados fundamentais. O projeto foi desenvolvido para a disciplina de **Estrutura de Dados** na **Fatec Rio Claro**.
 
 ## Objetivo do Projeto
